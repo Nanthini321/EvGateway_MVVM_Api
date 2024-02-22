@@ -20,7 +20,7 @@ class NetworkManager {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
-                completion(nil, "Error Response")
+                completion(nil, "Getting Error Response")
                 return
             }
             
